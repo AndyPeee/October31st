@@ -8,12 +8,13 @@ def sleep():
 
 
 def trick_or_treat():
-    word = random.choice("Trick","Treat")
+    word = random.choice(["Trick","Treat"])
     print(word)
 
 
+def string(sentence):
+    full_sentence = ("spooky " + str(sentence))
+    print(full_sentence)
 sleep()
-
-
 trick_or_treat()
-
+string(sentence=input("what sentence do you want? "))
